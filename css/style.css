@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200);
+
+body {
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777;
+  font-weight: 300;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  /*Box shadow allows us to add shadows to the elements. It takes 5 values, horizontal shadow, vertical shadow, blur radius, spread and a colour. The first two vaules can be either positive or negative numbers to move the colours around the values*/
+  /*RGBA colours allow us to set transparency. Alpha determines transparency 1-0.*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /*Fixed header*/
+  /*Position fixed fixes elements to the browser window. Use top, tight, bottom and left to move the element into place*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /*the elements on our pageg have an order along the z-amis. This is reffereed to as the z-index hierarchy. To push our header to the front of our page, we apply a positive z-index*/
+  z-index: 10;
+  height: 75px;
+}
+
+h1 {
+
+  float: left;
+  /*in order to get our img and text to site in the middle of our header, we need to use line-height. imgs by default align to the bootom or baseline of the line-heigh. WE can however change this.*/
+  line-height: 75px;
+}
+h1 img {
+  /*to change the default alignment of our img, we use vertical-align. This is directly related to line-height, and will not work with if we just set the height property. We must use line-height to make the change. */
+  vertical-align: middle;
+}
+nav {
+  float: right;
+  /*Text defaults to the middle of the line-height, so we don't need to change the vertical alignment here.*/
+  line-height: 75px;
+}
+nav a {
+  color: #777;
+  text-decoration: none;
+  padding: 0 15px;
+  /*Inline elements do not allow us to set height. They are as high as their content. Block-level elements allow us to set height. Here we change our anchor tags to be a hybird of inline & block. They sit on the same line, but now take notice of the line-height we've set.*/
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.intro {
+  height: 570px;
+  background: url(../images/blur-bg.jpg) center no-repeat;
+  background-size: cover;
+  /*overflow hiddlen hides any iamges or content that breaks an elements boundaries*/
+  overflow: hidden;
+  /*Whenever using the position property, we create gaps in our page. AS we have a fixed header, we lose 75px of our section. To make up for this, add a margin top of the same size to our section*/
+  margin-top: 75px;
+}
+
+.iphone {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.text {
+  float: right;
+  width: 50%;
+  padding: 100px 0 0 70px;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.text p {
+  font-size: 22px;
+  margin: 50px 0;
+}
+
+.columns{
+  margin: 70px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 35px;
+  margin: 30px 0 5px 0;
+}
+
+.columns p {
+  padding: 0 30px;
+}
+
+.quotes {
+  background-color: #e9e9e9;
+}
+
+.quote-tile {
+  background-color: #fff;
+  margin: 0 15px;
+  padding: 65px 23px;
+  /*when adding a border, use the following values; style, thickness, colour*/
+  border: solid 1px #e1e1e1;
+  /*to round border edges*/
+  border-radius: 4px;
+}
+
+blockquote {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.quote-tile img {
+  margin-top: 10px;
+  max-width: 90px;
+  border-radius: 45px;
+}
+
+.contact {
+  background: url("../images/map.jpg") center no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.contact a {
+  color: #444;
+  text-decoration: none;
+  /*To make nicer underline styles, use a small amount of padding and a bottom border.*/
+  padding-bottom: 1px;
+  border-bottom: solid 2px #444;
+}
+
+form {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+input, textarea {
+  border: none;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+textarea {
+/*to stop the textarea from resizing horizontally and breaking our layout, set the resize property to vertical*/
+  resize: vertical;
+  height: 150px;
+}
+
+/*to target our submit button specifically */
+input[type="submit"] {
+  width: 80px;
+  float: right;
+  background-color: #000;
+  color: #fff;
+  /*when changing the styling of buttons, the default cursor is lost. to add this back in, use the cursor property and set this to pointer*/
+  cursor: pointer;
+  }
+
+  /*remove blue glowing outlines*/
+  input:focus, textarea:focus {
+    outline: 0;
+  }
+
+footer {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+small {
+  display: block;
+  margin-top: 10px;
+}
+
+footer a {
+  padding: 2px;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+
+  h1, nav, .iphone, .text {
+    float: none;
+    width: 100%;
+  }
+
+  header {
+    position: static;
+    box-shadow: none;
+    text-align: center;
+    height:auto;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .intro {
+    margin: 0;
+    text-align: center;
+    height: auto;
+  }
+  .text {
+    padding: 30px 0 0 0;
+  }
+
+  .column {
+    margin: 20px 0;
+  }
+}
