@@ -1,0 +1,50 @@
+Font -
+Source Sans Pro (Google Font)
+
+Colours -
+Body Text: #777777
+Quotes Section Background: #e9e9e9
+Quote tile Border: #e1e1e1
+Contact section link: #444444
+
+TITLE COPY
+
+Your brew, better.
+
+Get 1000s and 1000s of tea brands delivered direct to your door.
+
+
+ABOUT COPY
+
+Search
+
+Find 1000s of brews and blends.
+
+Share
+
+Share your favourite teas with friends.
+
+Shop
+
+Buy securely and get free delivery.
+
+Sup
+
+Sit back and enjoy a nice cup of tea!
+
+
+
+QUOTES
+
+
+"TeaTime is 100% indispensable - I now use it to order all my tea."
+
+Peter Olson
+
+"After a long day's work, I love to relax. TeaTime is perfect."
+
+Susan Clark
+
+"I love ordering tea with TeaTime, it's the best app out there."
+
+Henry Larson
