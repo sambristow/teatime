@@ -1,0 +1,136 @@
+<!-- We add in a doctype at the beginning of our page to let older browsers know we are using HTML 5 -->
+<!doctype html>
+<html>
+  <head>
+    <!-- SEO -->
+    <title>Teatime</title>
+    <meta name="description" content="An iPhone app for ordering tea">
+    <!-- Symbols & Characters -->
+    <meta charset="utf-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/lanes.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <!-- Container - Div tags are used when no other tag has a semantic meaning. We need to contain the content within each of our strips, and will use divs to do this -->
+      <!-- As we're floating elements throughout our layout, we'll need to use a clearfix. Instead of writing this ourselves in CSS, we can use the group class from reset.css. To add two classes to an element, separate these with a space. -->
+      <div class="container group">
+        <h1><a href="index.html"> <img src="images/logo.png" alt="Teatime Logo"></a>
+        </h1>
+
+        <nav>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="http://twitter.com/teatime">Twitter</a>
+        </nav>
+
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="container group">
+
+      <div class="text">
+        <h2>Your Brew. <br>Better.</h2>
+        <p>Get 1000s and 1000s of tea <br> brands delivered direct to your door.</p>
+        <a href="http://appstore.html"> <img src="images/appstore.png" alt="Available on AppStore"></a>
+      </div>
+
+      <div class="iphone">
+        <img src="images/iphone.png" alt="iPhone">
+      </div>
+
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container group">
+        <!-- here we are using Lanes.css to create multicolumn layouts. Lanes is a grid system framework. It gives us a 12 columns to work with. Here we want 4 column layout, so we divide 12 by 4 to find the correct class we should apply. 12/4=3, so each div needs to have the class three columns. -->
+        <div class="three columns">
+          <img src="images/search.png">
+          <h3>Search</h3>
+          <p>Find 1000s of brews and blends.</p>
+        </div>
+
+        <div class="three columns">
+          <img src="images/share.png">
+          <h3>Share</h3>
+          <p>Share your favourite teas with friends.</p>
+        </div>
+
+        <div class="three columns">
+          <img src="images/shop.png">
+          <h3>Shop</h3>
+          <p>Buy securely and get free delivery.</p>
+        </div>
+
+        <div class="three columns">
+          <img src="images/sup.png">
+          <h3>Sup</h3>
+          <p>Sit back and enjoy a nice cup of tea!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="quotes">
+      <div class="container group">
+
+        <div class="four columns">
+          <div class="quote-tile">
+            <blockquote>"TeaTime is 100% indispensable - I now use it to order all my tea."</blockquote>
+            <p>Peter Olson</p>
+            <img src="images/peter.jpg">
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="quote-tile">
+            <blockquote>"After a long day's work, I love to relax. TeaTime is perfect."</blockquote>
+            <p>Susan Clark</p>
+            <img src="images/susan.jpg">
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="quote-tile">
+            <blockquote>"I love ordering tea with TeaTime, it's the best app out there."</blockquote>
+            <p>Henry Larson</p>
+            <img src="images/henry.jpg">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container group">
+        <h3> Get in Touch</h3>
+        <p><a href="mailto:help@steer.com">Email Us</a> or call Jamie on <a href="tel:+447775409587">+44 7775 409 587</a></p>
+        <!-- Use the form tag to encase all your text fields and buttons associated with this form -->
+        <form>
+          <!-- Input tags allow us to create text fields with different types. Make sure you use the correct type for the data you want to collect, ie. email, password, date, color, etc. We also use the name attribute to give context to the data we sent from each field. the placeholder attribute allows us to add greyed out text within the field.-->
+          <input type="email" name="emailaddress" placeholder="email@address.com">
+          <!-- use text areas for multi-line entries -->
+          <textarea name="message" placeholder="How can we help?"></textarea>
+          <!-- Input elements can be buttons too -->
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <a href="http://instagram.com/teatime"><img src="images/instagram.png"></a>
+        <a href="http://facebook.com/teatime"><img src="images/facebook.png"></a>
+        <a href="http://twitter.com/teatime"><img src="images/twitter.png"></a>
+        <small> Copyright TeaTime Systems Ltd, 2014</small>
+      </div>
+    </footer>
+  </body>
+
+  </html>
